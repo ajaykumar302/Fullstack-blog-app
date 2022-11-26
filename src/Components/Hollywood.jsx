@@ -5,7 +5,7 @@ export const Hollywood = () => {
   const [hollywood,setHollywood] = useState([]);
   useEffect(()=>{
     const getData = async () => {
-      const data = await axios.get("https://server-blog-project.herokuapp.com/hollywood");
+      const data = await axios.get("https://node-blog-server-app.herokuapp.com/hollywood");
       setHollywood(data.data);
     }
     getData()

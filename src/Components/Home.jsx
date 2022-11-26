@@ -12,13 +12,13 @@ const Home = () => {
     const [story,setStory] = useState([]);
     useEffect(()=>{
       const getData = async () => {
-        const data = await axios.get("https://server-blog-project.herokuapp.com/toursim");
+        const data = await axios.get("https://node-blog-server-app.herokuapp.com/toursim");
         setTour(data.data);
-        const tech = await axios.get("https://server-blog-project.herokuapp.com/technology");
+        const tech = await axios.get("https://node-blog-server-app.herokuapp.com/technology");
       setTech(tech.data);
-        const home = await axios.get("https://server-blog-project.herokuapp.com");
+        const home = await axios.get("https://node-blog-server-app.herokuapp.com/");
         setHome(home.data);
-        const story = await axios.get("https://server-blog-project.herokuapp.com/story");
+        const story = await axios.get("https://node-blog-server-app.herokuapp.com/story");
         setStory(story.data);
       }
       getData()

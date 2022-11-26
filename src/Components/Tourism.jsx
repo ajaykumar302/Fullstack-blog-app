@@ -7,7 +7,7 @@ function Tourism() {
   const [tour,setTour] = useState([]);
   useEffect(()=>{
     const getData = async () => {
-      const data = await axios.get("https://server-blog-project.herokuapp.com/toursim");
+      const data = await axios.get("https://node-blog-server-app.herokuapp.com/toursim");
       setTour(data.data);
     }
     getData()

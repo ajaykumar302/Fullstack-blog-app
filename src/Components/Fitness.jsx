@@ -7,7 +7,7 @@ function Fitness() {
   const [fitness,setFitness] = useState([]);
   useEffect(()=>{
     const getData = async () => {
-      const data = await axios.get("https://server-blog-project.herokuapp.com/fitness");
+      const data = await axios.get("https://node-blog-server-app.herokuapp.com/fitness");
       setFitness(data.data);
     }
     getData()
