@@ -7,7 +7,7 @@ function Technology() {
   const [tech,setTech] = useState([]);
   useEffect(()=>{
     const getData = async () => {
-      const data = await axios.get("https://node-blog-server-app.herokuapp.com/technology");
+      const data = await axios.get("https://blogserver-ggnd.onrender.com/technology");
       setTech(data.data);
     }
     getData()

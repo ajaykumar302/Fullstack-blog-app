@@ -18,19 +18,19 @@ function Card() {
  const [hollywood,setHollywood] = useState([]);
  useEffect(()=>{
    const getData = async () => {
-     const data = await axios.get("https://node-blog-server-app.herokuapp.com/toursim");
+     const data = await axios.get("https://blogserver-ggnd.onrender.com/toursim");
      setTour(data.data);
-     const techdata = await axios.get("https://node-blog-server-app.herokuapp.com/technology");
+     const techdata = await axios.get("https://blogserver-ggnd.onrender.com/technology");
    setTech(techdata.data);
-     const homedata = await axios.get("https://node-blog-server-app.herokuapp.com");
+     const homedata = await axios.get("https://blogserver-ggnd.onrender.com");
      setHome(homedata.data);
-     const storydata = await axios.get("https://node-blog-server-app.herokuapp.com/story");
+     const storydata = await axios.get("https://blogserver-ggnd.onrender.com/story");
      setStory(storydata.data);
-     const fitdata = await axios.get("https://node-blog-server-app.herokuapp.com/fitness");
+     const fitdata = await axios.get("https://blogserver-ggnd.onrender.com/fitness");
       setFitness(fitdata.data);
-      const fooddata = await axios.get("https://node-blog-server-app.herokuapp.com/food");
+      const fooddata = await axios.get("https://blogserver-ggnd.onrender.com/food");
       setFood(fooddata.data);
-      const hollydata = await axios.get("https://node-blog-server-app.herokuapp.com/hollywood");
+      const hollydata = await axios.get("https://blogserver-ggnd.onrender.com/hollywood");
       setHollywood(hollydata.data);
 
    }

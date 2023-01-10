@@ -7,7 +7,7 @@ function Food() {
   const [food,setFood] = useState([]);
   useEffect(()=>{
     const getData = async () => {
-      const data = await axios.get("https://node-blog-server-app.herokuapp.com/food");
+      const data = await axios.get("https://blogserver-ggnd.onrender.com/food");
       setFood(data.data);
     }
     getData()
